@@ -13,12 +13,12 @@ export default function Carousel() {
       });
   }, []);
   return (
-    <section className="max-w-[1216px] h-fit bg-red-900 m-auto">
-      <div className="flex ">
+    <section className="max-w-[1216px] max-h-[600px] bg-red-900 m-auto">
+      <div className="flex w-fit h-full">
         {posts.map((props) => {
           return (
-            <span>
-              <img src={props.social_image}></img>
+            <span className="w-full h-full ">
+              <img src={props.social_image} className="w-full h-full"></img>
               <span>
                 <p>{props.type_of}</p>
                 <p>{props.description}</p>

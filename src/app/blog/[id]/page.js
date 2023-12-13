@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 
-import Cards from "@/app/sections/Cards";
 import { useParams } from "next/navigation";
 
 export default function Home() {
@@ -18,14 +17,17 @@ export default function Home() {
       });
   }, [id]);
 
+  if(!posts) return <p>Loading</p>
   console.log(posts);
+  
   return (
     <section className="max-w-[1216px] h-fit flex flex-col m-auto">
       <h1>All Blog Post</h1>
       {posts && <img src={posts.cover_image} />}
-      {posts && (
-        <div dangerouslySetInnerHTML={{ __html: posts.body_html }}></div>
-      )}
+      {posts && <h2>{posts.title}</h2>}
+      {posts && <p>{posts.description}</p>}
+      {posts && <p>{posts.readable_publish_date}</p>}
+
       <div className="w-[full] h-fit flex justify-between"></div>
     </section>
   );

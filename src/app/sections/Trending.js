@@ -19,7 +19,7 @@ export default function Trending() {
         {posts.map((card) => {
           return (
             <span className="w-[289px] h-[320px] bg-cover">
-              <img src={card.social_image} className="w-full h-full object-fit"></img>
+              <img src={card.social_image} className="h-full w-fit bg-cover object-cover"></img>
             </span>
           );
         })}

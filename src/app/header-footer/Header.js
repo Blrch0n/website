@@ -22,14 +22,14 @@ export default function Header() {
           <Link href="/contact">Contact</Link>
         </span>
         <span className="flex flex-row gap-[26.67px] h-fit">
-          <img src="./face.svg"></img>
-          <img src="./twitter.svg"></img>
-          <img src="./instagram.svg"></img>
-          <img src="./Linkdedin.svg"></img>
+          <img src="/face.svg"></img>
+          <img src="/twitter.svg"></img>
+          <img src="/instagram.svg"></img>
+          <img src="/Linkdedin.svg"></img>
         </span>
       </div>
       <div className="w-full h-fit flex flex-row justify-between py-[20px]">
-        <img src="./bottom_logo.svg"></img>
+        <img src="/bottom_logo.svg"></img>
         <span className="flex flex-row gap-[32px] h-full items-center">
           <a href="./">Terms of Use</a>
           <a href="./">Privacy Policy</a>
